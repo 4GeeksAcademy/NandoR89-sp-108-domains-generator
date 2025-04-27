@@ -1,5 +1,39 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
-
 body{
-    background: white;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://img.freepik.com/foto-gratis/renderizacion-3d-tecnologias-futuristas_23-2151941526.jpg?ga=GA1.1.303782104.1745660941&semt=ais_hybrid&w=740);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table {
+    background-color: white;
+    border: 3px solid black;
+    width: 25%;
+    margin-top: 100px;
+}
+
+th, td {;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+th {
+    background-color: aqua;
+    border: 3px solid black;
+}
+
+td {
+    background-color: whitesmoke;
+    transition: all 0.3s;
+}
+
+td:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 20px 0px 10px rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+    background-color:rgb(224, 128, 144);
 }
