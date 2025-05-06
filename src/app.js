@@ -2,33 +2,31 @@ import "bootstrap";
 import "./style.css";
 
 
+function generateDomainCombinations() {
 
-function generateDomain(){
+  let pronouns = ['the', 'our'];
+  let adjectives = ['great', 'big'];
+  let nouns = ['jogger', 'racoon'];
+  let domains = ['.com', '.online']
+  let domainCombinations = []
 
-    let pronoun = ['the', 'our'];
-    let adj = ['great', 'big'];
-    let noun = ['jogger', 'racoon'];
-    let domain = ['.com', '.online']
-
-    let diferentsDomain = []
-
-    for (let p = 0; p < pronoun.length; p++) {
-        for (let a = 0; a < adj.length; a++) {
-            for (let n = 0; n < noun.length; n++) {
-                for (let d = 0; d < domain.length; d++){
-                    diferentsDomain.push(pronoun[p] + adj[a] + noun[n] + domain[d])
-                }
-            }
-        } 
-    } 
-    return diferentsDomain
+  for (let pronoun = 0; pronoun < pronouns.length; pronoun++) {
+    for (let adjective = 0; adjective < adjectives.length; adjective++) {
+      for (let noun = 0; noun < nouns.length; noun++) {
+        for (let domain = 0; domain < domains.length; domain++) {
+          domainCombinations.push(pronouns[pronoun] + adjectives[adjective] + nouns[noun] + domains[domain])
+        }
+      }
+    }
+  }
+  return domainCombinations
 }
 
-let dominios = generateDomain()
+let generateDomains = generateDomainCombinations()
 
 let domainList = document.querySelector("#random")
-dominios.map((item) => {
-    domainList.innerHTML += `
+generateDomains.map((item) => {
+  domainList.innerHTML += `
     <tr>
         <td>           
             ${item}

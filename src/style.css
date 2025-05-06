@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     justify-content: center;
     background-image: url(https://img.freepik.com/foto-gratis/renderizacion-3d-tecnologias-futuristas_23-2151941526.jpg?ga=GA1.1.303782104.1745660941&semt=ais_hybrid&w=740);
@@ -13,7 +13,9 @@ table {
     margin-top: 100px;
 }
 
-th, td {;
+th,
+td {
+    ;
     padding: 5px;
     margin: 2px;
     text-align: center;
@@ -35,5 +37,5 @@ td:hover {
     transition: 0.3s;
     box-shadow: 20px 0px 10px rgba(0, 0, 0, 0.5);
     font-weight: 900;
-    background-color:rgb(224, 128, 144);
+    background-color: rgb(224, 128, 144);
 }
